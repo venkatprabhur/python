@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup as bsoup
 import requests
 from csv import writer
 
-url = 'https://housing.com/in/buy/searches/P4bimjmco2m9afw0m'
+url = #add a web page here and edit the html class accordingly.
 html_text = requests.get(url).text
 soup = bsoup(html_text, 'lxml')
 projects = soup.find_all('article', class_="css-1nr7r9e")
